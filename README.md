@@ -23,6 +23,7 @@
 * navigation should be fixed to the top of the page when the user scrolls and the opicity should be 0.9
 * accent color (titles, links) is #266035
 * "shop our indoor plant sale" button should switch background color and text color on hover
+* must use flexbox for layout
 
 ### RESPONSIVE
 * write media queries for 800px and 500px - your site should match the files for the tablet and phone view respectively at these breakpoints
