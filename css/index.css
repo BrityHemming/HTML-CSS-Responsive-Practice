@@ -1,0 +1,117 @@
+body {
+    margin: 0 1%;
+}
+img {
+        float: left;
+        width:  7%;
+        object-fit: cover;
+}
+nav {
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color:#266035;
+}
+    
+
+
+
+
+.header-container {
+        background-image: url(/images/header.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #FBFFFB;
+        height: 375px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        
+
+}
+h1 {
+    color: #FBFFFB;
+    font-size: 1.6em;
+}
+input {
+    height: 2rem;
+    width: 23%;
+}
+.about-container {
+        background-image: url(/images/about-img.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #266035;
+        height: 375px;
+        width: 100%;
+        border: 2px solid black;
+        
+}  
+h2 {
+    margin-left: 60%;
+    margin-top: 20%;
+} 
+p {
+    margin-left: 60%;
+}
+.our-plants p {
+    text-align: center;
+  
+}
+.boxes {
+    display: flex;
+}   
+.one {
+    background-image: url(/images/succulants.jpg);
+    background-position: center;
+    background-size: contain;
+    height: 375px;
+    width: 50%;
+    border: 2px solid black;
+    margin: 0 1%;
+    margin-right: 0;
+}
+.two {
+    background: linear-gradient(to top right, crimson 0%, mediumseagreen 87%);
+    height: 375px;
+    width: 50%;
+    border: 2px solid black;
+    margin: 0 1%;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+        
+
+
+
+       
+    
+    
+  
+
+    
+
+
+
+   
+
