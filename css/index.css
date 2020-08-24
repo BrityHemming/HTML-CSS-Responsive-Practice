@@ -1,0 +1,33 @@
+.homeSection{
+    background:url(/images/header.jpg);
+    height: 100vh;
+    width:100%;
+}
+
+.topNav, h1, nav{
+    border: solid black 2px;
+}
+
+.topNav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav{
+    width: 50%;
+    display:flex;
+    justify-content:space-evenly;
+}
+.aboutSection{
+    background:url(/images/about-img.jpg);
+    height: 100vh;
+    width:100%;
+}
+
+
+
+
+
+.contactSection{
+    background-color:green;
+}
