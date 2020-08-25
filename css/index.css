@@ -192,7 +192,7 @@ h1 {
   background-size: cover;
   font-family: Source Sans Pro;
 }
-.aboutinfo{
+.aboutinfo {
   /*border: 2px solid purple;*/
   width: 50%;
   height: 90%;
@@ -206,32 +206,31 @@ h1 {
   text-align: center;
   padding-bottom: 10%;
 }
-h2{
+h2 {
   border: 2px solid goldenrod;
   font-size: 5em;
   color: #266035;
 }
-.aboutinfo p{
+.aboutinfo p {
   font-size: 1.5em;
 }
-#plants{
+#plants {
   height: 120vh;
-  width: 100%;
   font-family: Source Sans Pro;
 }
-.succulantsp h2{
+.succulentsinfo {
+  border: 2px solid blue;
   display: flex;
-  justify-content: center;
-  margin-top: 10%;
+  width: 100%;
 }
-h3{
-  border: 2px solid orangered;
-}
-.succulantsimg{
+
+.succulentsimg {
   border: 2px solid green;
   width: 50%;
 }
-#succulantsp{
+.succulents {
   border: 2px solid red;
-  float: right;
+  width: 50%;
+  height: 100%;
+  width: 20px;
 }
