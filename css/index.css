@@ -1,28 +1,207 @@
+p{
+    font-family:Source Sans Pro;
+}
+h1, h2,h3{
+    font-family: Oxygen;
+}
+body{
+    background: #FBFFFB;
+}
+
+h1{
+    color: #FBFFFB;
+}
+
+
 .homeSection{
     background:url(/images/header.jpg);
-    height: 100vh;
+    height: 80vh;
     width:100%;
+    Border: solid red 6px;
 }
 
 .topNav, h1, nav{
-    border: solid black 2px;
+    border: solid black 4px;
+    display: flex;
+    justify-position:top;
 }
 
 .topNav{
     display:flex;
     justify-content: space-between;
     align-items:center;
+    height: 10vh;
+    width: 100%;
+    background: white;
+    opacity: 70%;
 }
+
+.wcImage{
+    height: 100px;
+    border: dashed black 4px;
+}
+
 nav{
     width: 50%;
     display:flex;
     justify-content:space-evenly;
 }
+
+nav a{
+    font-size:1.8em;
+    text-decoration: none;
+    color: green;
+    
+}
+
+.contentOne {
+    height: 70vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentOne button{
+   
+   display: flex;
+    width: 30%;
+    margin: 20px;
+    padding: 30px;
+    font-size: 1.5em;
+    
+}
+
+.contentOne h1{
+    width: 50%;
+    height: 8vh;
+    font-size: 4em;
+    text-align: center;
+}
+
+
+
 .aboutSection{
     background:url(/images/about-img.jpg);
     height: 100vh;
     width:100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 }
+
+.contentTwo{
+    width: 50%;
+    display:flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+.contentTwo h2{
+    font-size: 3em;
+    margin-top: 20rem;;
+}
+
+.contentTwo p{
+    width:60%;
+    font-size: 1.5em;
+    
+}
+
+.plantsSection{
+    display:flex;
+   flex-direction: column;
+
+}
+
+.psTitle{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    width: 100%;
+    height: 40px;
+}
+
+.succelents,
+.plantsSectionTwo,
+.plantsSectionThree
+ {
+    display: flex;
+}
+
+
+plantsSection h2{
+    justify-content: center;
+    width: 100%;
+}
+.scImage{
+    width: 50%;
+    display: flex; 
+}
+
+.footerImage {
+    width: 40%;
+    height: auto;
+
+}
+
+.footerContent {
+    display:flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.findUs {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.psRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.footerTitle{
+   
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+        width: 100%;
+        height: 40px;
+        padding: 40px;
+}
+.copyright{
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
