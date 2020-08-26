@@ -1,212 +1,450 @@
-p{
-    font-family:Source Sans Pro;
-}
-h1, h2,h3{
-    font-family: Oxygen;
-}
-body{
-    background: #FBFFFB;
+body {
+  border: dashed red 3px;
 }
 
-h1{
-    color: #FBFFFB;
+p,
+a,
+address {
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1,
+h2,
+h3, 
+a {
+  font-family: "Oxygen", sans-serif;
+  color: #266035;
+}
+body {
+  background: #fbfffb;
+}
+button{
+  background:#266035; 
+  color: white;
+  /* text-align: center;
+  width: 20%;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5em; */
 }
 
-
-.homeSection{
-    background:url(/images/header.jpg);
-    height: 80vh;
-    width:100%;
-    Border: solid red 6px;
+h1,
+address {
+  color: #fbfffb;
 }
 
-.topNav, h1, nav{
-    border: solid black 4px;
-    display: flex;
-    justify-position:top;
+.homeSection {
+  background: url(/images/header.jpg);
+  height: 80vh;
+  width: 100%;
+  background-size:cover;
+  background-position: fixed;
+  background-position: bottom;
+
 }
 
-.topNav{
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    height: 10vh;
-    width: 100%;
-    background: white;
-    opacity: 70%;
+.topNav,
+h1,
+nav {
+  display: flex;
+  justify-position: top;
 }
 
-.wcImage{
-    height: 100px;
-    border: dashed black 4px;
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: white;
+  opacity: .9;
 }
 
-nav{
-    width: 50%;
-    display:flex;
-    justify-content:space-evenly;
+.wcImage {
+  height: 100px;
 }
 
-nav a{
-    font-size:1.8em;
-    text-decoration: none;
-    color: green;
-    
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  font-size: 1.8em;
+  text-decoration: none;
 }
 
 .contentOne {
-    height: 70vh;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.contentOne button{
-   
-   display: flex;
-    width: 30%;
-    margin: 20px;
-    padding: 30px;
-    font-size: 1.5em;
-    
+.contentOne button {
+  text-align: center;
+  width: 20%;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5em;
+  background: white;
+  color: black;
 }
 
-.contentOne h1{
-    width: 50%;
-    height: 8vh;
-    font-size: 4em;
-    text-align: center;
+.contentOne button:hover {
+  background: #266035;
+  color: white;
+  outline: none;
 }
 
-
-
-.aboutSection{
-    background:url(/images/about-img.jpg);
-    height: 100vh;
-    width:100%;
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
+.contentOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contentTwo{
-    width: 50%;
-    display:flex;
-    justify-content:flex-end;
-    flex-direction: column;
-    align-items:center;
-    
+.contentOne h1 {
+  height: 8vh;
+  font-size: 5em;
+  text-align: center;
 }
 
-.contentTwo h2{
-    font-size: 3em;
-    margin-top: 20rem;;
+.aboutSection {
+  background: url(/images/about-img.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.contentTwo p{
-    width:60%;
-    font-size: 1.5em;
-    
+.contentTwo {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
-.plantsSection{
-    display:flex;
-   flex-direction: column;
-
+.contentTwo h2 {
+  font-size: 4em;
+  margin-top: 20rem;
 }
 
-.psTitle{
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-    width: 100%;
-    height: 40px;
+.contentTwo p {
+  width: 60%;
+  font-size: 1.5em;
+}
+
+.plantsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.psTitle {
+  display: flex;
+  justify-content: center;
+  /* margin: 40px; */
+  width: 100%;
+  /* height: 40px; */
+  font-size: 4em;
+  /* padding: 20px; */
 }
 
 .succelents,
 .plantsSectionTwo,
-.plantsSectionThree
- {
-    display: flex;
+.plantsSectionThree {
+  display: flex;
 }
 
-
-plantsSection h2{
-    justify-content: center;
-    width: 100%;
+.scImage {
+  width: 50%;
+  display: flex;
+  height: 70vh;
 }
-.scImage{
-    width: 50%;
-    display: flex; 
-}
-
-.footerImage {
-    width: 40%;
-    height: auto;
-
-}
-
 .footerContent {
-    display:flex;
-    justify-content: space-between;
-    padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 50px; */
+  width: 100%;
+  justify-content: center;
+}
+.footerImage {
+  width: 35%;
+  height: 500px;
+
 }
 
 .findUs {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.psRight button {
+  padding: 3%;
+  width: 20vw;
+  margin-left: 30%;
+  margin-bottom: 15%;
+  font-size: 1.5em;
+}
+
+.psRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: flex-start;
+  width: 50%;
+}
+
+.psRight h3 {
+  font-size: 2.5em;
+}
+
+.psRight p {
+  display: flex;
+  font-size: 1.5em;
+  margin-left: 15%;
+  width: 75%;
+  align-items: center;
+}
+
+.footerTitle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding-top: 50px;
+  /* margin: 20px; */
+  font-size: 3em;
+  color: white;
+}
+
+.findUs h3 {
+  font-size: 2.5em;
+}
+
+address {
+  font-size: 1.5em;
+  font-style: normal;
+}
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.contactSection {
+  background-color: #355e3b;
+  height: 80vh;
+}
+
+
+@media (max-width: 800px){
+  body{
+    width: 800px;
+  }
+
+  topNav{
     width: 100%;
+  }
+  nav{
+    justify-content: space-between;
+
+  }
+  nav a{
+    padding: 10px;
+  }
+
+  .contentOne button{
+    width: 50%;
+  }
+
+  .contentTwo p{
+    width: 100%;
+  }
+
+  .plantsSection {
+    width: 800px;
+  
+  }
+
+
+ .scImage{
+    width: 50%;
+    height: 50vh;
+  }
+
+  .psRight{
+    width: 50%;
+    height: 50vh;
+  }
+
+  .psRight h3{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .psRight p{
+    width: 90%;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+  }
+  .psRight button{
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .contactSection{
+    width: 100%;
+    justify-content: space-evenly; 
+  }
+.FooterContent{
+  width: 800px;
+}
+  .findUs{
+    width: 40%;
+    justify-content: space-evenly;
+  }
+
+  .footerImage{
+    width: 50%;
+    margin-left: 20px;
+  }
+  
 }
 
-.psRight{
-    display: flex;
+
+
+
+
+
+@media (max-width: 500px) {
+  body {
+    width: 500px;
+  }
+
+.topNav{
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    height: 20vh;  
 }
 
-.footerTitle{
-   
-        display: flex;
-        justify-content: center;
-        margin: 40px;
-        width: 100%;
-        height: 40px;
-        padding: 40px;
+nav {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly ;
 }
-.copyright{
+
+.contentOne button {
+    visibility: hidden;
+}
+
+.contentOne h1 {
+    width: 70%;
+}
+
+.contentTwo{
+  width: 100%;
+  align-items:center;
+}
+.contentTwo h2{
+  font-size: 4em;
+}
+
+.contentTwo p{
+  width: 80%;
+  font-size: 1.8em;
+  line-height: 1.3;
+}
+
+.wcImage{
+  display: flex;
+  justify-content: center;
+}
+
+.plantsSection *{ 
+  flex-direction: column;
+  align-items:center;
+  width: 500px;
+  text-align: center;
+
+}
+
+.plantsSection h3{
+  font-size: 3em;
+}
+
+.scImage{
+
+width: 80%;
+height: 40vh;
+  margin: 3%;
+}
+
+.psRight p{
+  margin: 0 auto;
+}
+
+.psRight button{
+  margin: 30px;
+  width: 50%;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.plantsSectionTwo{
+  flex-direction: column-reverse;
+}
+
+.contactSection {
+ display:flex;
+ flex-direction: column;
+  width: 500px;
+ height: 100%;
+ /* align-items: center; */
+ text-align: center;
+} 
+
+  .footerContent {
+    width: 100%;
     display:flex;
-    justify-content: flex-end;
-}
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+  .findUs{
+    line-height: 1.6;
+  }
+   
+  
+  .footerImage{
+    width: 80%;
+    height: 60vh;
+    marging: 0 auto;
+    
+  }
+
+  .copyright p{
+    
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+padding: 20px;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contactSection{
-    background-color:green;
 }
