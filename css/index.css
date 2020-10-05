@@ -103,9 +103,12 @@ nav{
 }
 .logo{
     width:10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo img{
-    width:80%;
+    width:60%;
 }
 .links{
     width:60%;
@@ -186,4 +189,71 @@ footer h3{
 .copyright{
     text-align:right;
     margin-right:10%;
+}
+
+/*Media Queries*/
+@media(max-width:800px){
+    #about{
+        background-position: left top;
+    }
+    #about div{
+        margin-top:5%;
+        width:35%;
+    }
+    .container .text div{
+        width:70%;
+    }
+    .img-wrapper{
+        width:70%;
+    }
+    .container p{
+        text-align:left;
+    }
+}/*this closes the 800px media query*/
+
+/*phone*/
+@media(max-width:500px){
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+    .logo{
+        width:20%;
+    }
+    .links{
+        width:100%;
+    }
+    #about{
+        justify-content:flex-start;
+    }
+    #about div{
+        margin-left:10%;
+        width:40%;
+    }
+    .container{
+        flex-direction:column;
+        align-items:center;
+    }
+    .mobile{
+        flex-direction:column-reverse;
+    }
+    .container div{
+        width:80%;
+    }
+    .bg{
+        height:60vh;
+    }
+    .footer-parent{
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .left, .right{
+        width:80%;
+        margin:2% 0;
+    }
+    .copyright{
+        text-align:center;
+        margin-right:0;
+        margin-top:1%;
+    }
 }
