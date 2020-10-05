@@ -5,7 +5,7 @@
 * Clone your OWN version of the repository
 * Create a new branch: git checkout -b <firstName-lastName>.
 * Implement the project on your newly created <firstName-lastName> branch, committing changes regularly
-* Push commits: git push origin <firstName-lastName>
+* Push commits: git push -u origin <firstName-lastName>
 
 ## Task 2 - MVP 
 ### HTML 
@@ -28,4 +28,4 @@
 * write media queries for 800px and 500px - your site should match the files for the tablet and phone view respectively at these breakpoints
 
 
-When you are finished - DM your Branch to Brit
+
