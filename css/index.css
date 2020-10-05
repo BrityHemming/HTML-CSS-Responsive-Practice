@@ -86,6 +86,7 @@ audio,
 video {
     margin: 0;
     padding: 0;
+    /* border: 0; */
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -210,10 +211,13 @@ nav {
 
 .logo {
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
-    width: 80%;
+    width: 60%;
 }
 
 .links {
@@ -316,3 +320,80 @@ footer h3 {
     text-align: right;
     margin-right: 10%;
 }
+
+
+/* media queries */
+
+@media(max-width: 800px) {
+    #about {
+        background-position: left top;
+    }
+    #about div {
+        margin-top: 5%;
+        width: 35%;
+    }
+    .container .text div {
+        width: 70%;
+    }
+    .img-wrapper {
+        width: 80%;
+    }
+    .container {
+        text-align: left;
+    }
+}
+
+
+/* this closes the 800px media query */
+
+
+/* phone */
+
+@media(max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 20%;
+    }
+    .links {
+        width: 100%;
+    }
+    #about {
+        justify-content: flex-start;
+    }
+    #about div {
+        margin-left: 10%;
+        width: 40%;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile {
+        flex-direction: column-reverse;
+    }
+    .container div {
+        width: 80%;
+    }
+    .bg {
+        height: 60vh;
+    }
+    .footer-parent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left,
+    .right {
+        width: 80%;
+    }
+    .copyright {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 1%;
+    }
+}
+
+
+/* this closes the 500px media query */
