@@ -207,3 +207,77 @@ footer h3{
 .right img{
     width:60%;
 }
+
+
+/*
+desktop first - max-width to scale down
+mobile first - min-width to scale up
+*/
+
+/*Media Queries*/
+
+/*Tablet*/
+@media(max-width:800px){ /*any screen 800px or less, these styles apply!*/
+   #about{
+       background-image:none;
+       background-color:grey;
+       justify-content:center;
+       align-items:center;
+       text-align:center;
+   }
+   #about div{
+       width:50%;
+   }
+   .text div{
+       width:80%;
+   }
+}
+
+@media(max-width:500px){
+   nav{
+       flex-direction:column;
+       justify-content: center;
+       align-items:center;
+   }   
+   .links{
+       width:100%;
+   }
+   .logo{
+       width:20%;
+   }
+   #about div{
+       margin:0;
+   }
+   .wrapper{
+       flex-direction:column;
+   }
+   .mobile-flip{
+       flex-direction:column-reverse;
+   }
+   .wrapper div{
+       width:100%;
+   }
+   .shop-bg{
+       height:40vh;
+       width:100%;
+   }
+  .text div{
+      width:80%;
+  }
+  footer{
+      flex-direction:column;
+  }
+  .left, .right{
+      width:100%;
+  }
+  .right{
+      order:-1;
+  }
+  footer h2{
+      order:-2;
+  }
+  .copyright{
+      text-align:center;
+      margin:0;
+  }
+}
