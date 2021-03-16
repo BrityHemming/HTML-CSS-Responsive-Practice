@@ -1,0 +1,246 @@
+/* Add CSS styling here */
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+/* 	border: 0; */
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+/* 	background: white; */
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+/*General Styles*/
+
+*{
+  box-sizing: border-box; 
+   max-width:100%; 
+  /* border: 1px solid gray; */
+  margin: 0 auto;
+}
+
+html{
+  font-size: 62.5%; 
+}
+
+body{
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size:2.0rem;
+  line-height: 1.5; 
+  color: #4f4f4f;
+  background-color: #FBFFFB;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  width: 75%;
+  font-size: 1.8rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 3px;
+}
+section{
+  padding: 2% 0;
+  
+}
+
+/* General CSS */
+header img{
+    width:10%;
+}
+header{
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+    overflow: hidden;
+   background-color: rgba(255,255,255,0.8);
+   position: fixed;
+   top: 0;
+   z-index: 999;
+}
+header nav{
+    width:70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav a {
+    color:#266035;
+}
+header div{
+    padding: 0 1%;
+}
+
+/* Home */
+h1{
+    color: #FBFFFB;
+    font-size: 5rem;
+}
+#home{
+    background-image:url('../images/header.jpg');
+    height:80vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headertext button{
+    background-color: #FBFFFB;
+    color:#266035;
+    width: 100%;
+    margin: 9% 0 0 0;
+    padding: 3% 0;
+    font-size: 1.8rem;
+}
+#about{
+    background-image:url('../images/about-img.jpg');
+    height:90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.abouttext{
+    width: 35%;
+    margin-left: 70%;
+}
+.abouttext h2{
+    color:#266035;
+    padding: 5% 0;
+    font-size: 3.5rem;
+}
+
+.planttitle h2{
+    text-align: center;
+    color:#266035;
+    padding: 2% 0;
+    font-size: 3.5rem;
+}
+.plantitems{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.plantitems div{
+    width:50%;
+}
+.bgimg1{
+    background-image:url('../images/succulants.jpg');
+    height:60vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.bgimg2{
+    background-image:url('../images/cacti.jpg');
+    height:50vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.bgimg3{
+    background-image:url('../images/tropicals.jpg');
+    height:50vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.planttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.planttext h2{
+    padding: 3% 0;
+    color:#266035;
+    font-size: 3.5rem;
+}
+.planttext p{
+    text-align: justify;
+    padding: 0 10%;
+}
+.planttext button{
+    width: 18%;
+    padding:1.5%;
+    background-color: #266035;
+    color: #FBFFFB;
+    font-size: 1.5rem;
+    margin: 2% 0;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #266035;
+}
+#contact{
+display: flex;
+justify-content:space-between;
+
+}
+
+footer address{
+    width: 60%;
+    margin-left:20%;
+   color: #FBFFFB;
+    padding: 4% 0;
+}
+footer p{
+    padding: 10% 0; 
+
+}
+footer h3{
+    font-size:3rem;
+}
+
+footer img{
+    width:30%;
+    margin: 5% 20%;
+    height: 30vh;
+}
