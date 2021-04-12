@@ -204,3 +204,71 @@ nav{
 #contact a{
     color:#FBFFFB;
 }
+#contact h2{
+    color:#FBFFFB;
+}
+
+/*Responsive Styles*/
+/*Break points*/
+/*
+max-width scales down, this is for desktop first design
+min-width scales up, this is for mobile first design
+*/
+/*tablet*/
+@media(max-width:800px){
+    #about div{
+        width:40%;
+    }
+    .shopText div{
+        width:70%;
+    }
+}
+/*phone*/
+@media(max-width:500px){
+   /*nav*/
+   nav{
+       flex-direction: column;
+       align-items: center;
+   }
+   .links{
+       width:100%;
+   }
+   .logo{
+       width:25%;
+   }
+   #home button{
+       display:none;
+   }
+   #about{
+       background-image:none;
+       background-color:#e2e3e5;
+       justify-content: center;
+   }
+   #about div{
+    margin-right:0;
+    width:80%;
+   }
+   .container{
+       flex-direction:column;
+       align-items: center;
+   }
+   .bg-img, .shopText{
+       width:90%;
+   }
+   .mobileSpecific{
+       flex-direction:column-reverse;
+   }
+   .shopText div{
+       width:100%;
+   }
+    .left, .right{
+           width:100%;
+       }
+       #contact p.copyright{
+           text-align:center;
+           margin:0;
+       }
+       .left div{
+        width:50%;
+       }
+}
