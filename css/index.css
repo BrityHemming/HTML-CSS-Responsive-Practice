@@ -58,7 +58,7 @@ body{
     
 }
 a{
-    font-family:font-family: 'Source Code Pro', monospace;
+    font-family:'Source Code Pro', monospace;
     text-decoration:none;
     color:#266035;
 
@@ -124,7 +124,7 @@ nav{
 #about{
     display:flex;
     justify-content:flex-end;
-    background-image:('images\about-img.jpg');
+    background-image:("images\about-img.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -135,7 +135,7 @@ nav{
 #about div{
     width:20%;
     margin-right:10%;
-    padding:4%
+    padding:4%;
 }
 /*Shop Section*/
 .container{
@@ -193,5 +193,64 @@ h2{
     width:40%;
 }
 #contact h3{
-    s
+ color:#FBFFFB;   
+}
+#contact a{
+    color:#FBFFFB;
+}
+
+/*Responsive*/
+/*Break points*/
+/*
+Max-width scales down, this is for desktop first design
+min-width scales up, this is for mobile first design.
+*/
+/*Tablet*/
+@media(max-width:800px){
+    #about div{
+        width:40%;
+    }
+    .shopText div{
+        width:70%;
+    }
+
+}
+/*Phone*/
+@media(max-width:500px){
+   /*nav*/
+   nav{
+       flex-direction:column;
+       align-items:center;
+   }
+   .links{
+       width:100%;
+   }
+   .logo{
+       width:25%;
+   }
+   #home button{
+       display:none;
+   }
+   #about{
+       background-image:none;
+       background-color:#e2e3e5;
+   }
+   #about div{
+       justify-content:center;
+       margin-right:0;
+       width:80%;
+   }
+   .container{
+       flex-direction:column;
+       align-items:center;
+   }
+   .bg-img, .shopText{
+       width:90%;
+       
+   }
+   .mobilespecific{
+       flex-direction:column-reverse;
+   }
+   
+
 }
