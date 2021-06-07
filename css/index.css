@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,107 +38,240 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    border: 1px solid red;
+*{
+    box-sizing: border-box; /*respect the width of the box, apply padding or border within the width it's been given not in addition to it*/
+    max-width:100%; /*Makes it so that elements can never be bigger than their parents, stops the horizontal scroll bar*/
+    padding:0;
+    margin:0;
+    border: 1px solid grey;
 }
 
-/* general styles */
-
-html {
-    font-size: 62.5%;
+/*General Styles*/
+html{
+    font-size:62.5%; /*default browser font-size is 16px, this makes it so that 1rem === 10px (easier math) it also gives the user control over bumping up or down the font size because % is a scalable unit of measurement*/
 }
-
-body {
-    font-size: 1.6 rem; /* setting the font back to 16px */
-    line-height: 1.5;
-    color: #4f4f4f;
-    background-color: #fbfffb;
+body{
+    font-size:1.8rem; /*setting the font size back to 18px*/
+    line-height:1.5; /*no unit of measurement, it take the font size and multiplies it by this number to add space between lines*/
+    color:#4F4F4F; 
+    background-color:#FBFFFB;
     font-family: 'Source Sans Pro', sans-serif;
-
 }
-a {
+a{
+    font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
-}
-
-h1, h2, h3 {
     color:#266035;
 }
-
-h1 {
-    color: #FBFFFB;
-    font-size: 5rem;
+h1, h2, h3{
+    font-family: 'Oxygen', sans-serif;
+    color:#266035;
+    text-align:center;
 }
-
-h3 {
-    font-size 2.5rem;
+h1{
+    color:#FBFFFB;
+    font-size:5rem;
 }
-
-button {
-    background-color: #266035;
-    padding: 3% 4%;
-    font-size: 1.8rem;
+h2{
+    font-size:3.5rem;
+}
+h3{
+    font-size:2.5rem;
+}
+button{
+    background-color:#266035;
+    padding:3% 4%;
+    font-size:1.8rem;
     font-family: 'Source Sans Pro', sans-serif;
+    color:#FBFFFB;
+}
+section{
+    padding:4% 0;
 }
 
-/* header section */
-
-nav {
-    display: flex;
+/*Header Section Styles*/
+nav{
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
+    position:fixed;
+    top:0;
     width: 100%;
-    z-index: 999;   
-    background-color: rgba(255,255,255,0.8);
+    z-index: 999;/*will make sure everything scrolls behind the nav*/
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
-.logo {
-    width: 10%;
-    display: flex;
+.logo{
+    width:10%;
+    display:flex;
     justify-content: center;
     align-items: center;
-
 }
-
-.logo img {
-    width: 70%;
+.logo img{
+    width:70%;
 }
-
-.links {
-    width: 50%;
-    display: flex;
+.links{
+    width:50%;
+    display:flex;
     justify-content: space-evenly;
 }
-
-/* top section styles */
-
-#top {
-    height: 90vh;
-    background-image: url('../images/header.jpg');
-    background-size: cover;
+/*Top Section Styles*/
+#top{
+    height:90vh;
+    background-image:url('../images/header.jpg');
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position:bottom;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align:center;
+}
+#top button{
+    background-color:#FBFFFB;
+    border:2px solid #266035;
+    color:#266035;
+    margin-top:5%;
+    transition:2s;
+}
+#top button:hover{
+    color:#FBFFFB;
+    background-color:#266035;
+}
+/*About Section Styles*/
+#about{
+    height:80vh;
+    background-image:url('../images/about-img.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#about .txt{
+    width:25%;
+    margin-right:10%;
 }
 
-#top button {
-    background-color: #FBFFFB;
-    border: 2px solid #266035;
-    color: #266035;
-    margin-top: 5%;
-    transition: 2s;
+/*shop section styles*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.shoptxt, .bgimg{
+    width:50%;
+}
+.shoptxt{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:6% 4%;
+    text-align:center;
+}
+.shoptxt div{
+    width:65%;
+}
+.shoptxt div button{
+    margin-top:5%;
 }
 
-#top button:hover {
-    color: #FBFFFB;
-    background-color: #266035
+.bgimg{
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.succulants{
+    background-image:url('../images/succulants.jpg');
+}
+.cacti{
+    background-image:url('../images/cacti.jpg');
+}
+.tropicals{
+    background-image:url('../images/tropicals.jpg');
+}
 
+/*Footer Section Styles*/
+#contact{
+    display:flex;
+    flex-wrap:wrap;
+    color:#fff;
+    background-color:#266035;
+}
+#contact a, #contact h3{
+    color:#fff;
+    text-align:left;
+}
+#contact h2{
+    width:100%;
+    color:#fff;
+}
+.left, .right{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left div, .right img{
+    width:60%;
+}
+.bottom{
+    width:100%;
+    text-align:right;
+    margin-right:10%;
+}
+
+/*Responsive Styles*/
+/*
+max-width scales down - desktop first
+min-width scales up - mobile first
+*/
+@media(max-width: 800px){
+    /*if the screen size is 800px or smaller apply these styles*/
+}
+
+@media(max-width: 500px){
+    /*if the screen size is 500px or smaller apply these styles*/
+    nav{
+        flex-direction:column;
+    }
+    .links{
+        width:80%;
+    }
+    #about{
+        background-image:none;
+        background-color:#e0e1e3;
+        justify-content: center;
+        height:auto;
+    }
+    #about .txt{
+        margin:0;
+        width:80%;
+    }
+    /*shop section styles*/
+    .container{
+        justify-content: center;
+    }
+    .bgimg{
+        height:60vh;
+    }
+    .shoptxt, .bgimg{
+        width:90%;
+    }
+    .one{
+        order:0;
+    }
+    .two{
+        order:1
+    }
+    .three{
+        order:2;
+    }
+    .four{
+        order:3;
+    }
+    .five{
+        order:4;
+    }
+    .six{
+        order:5;
+    }
 }
