@@ -65,6 +65,7 @@ a{
 h1, h2, h3{
     font-family: 'Oxygen', sans-serif;
     color:#266035;
+    text-align: center;
 }
 h1{
     color:#FBFFFB;
@@ -111,6 +112,9 @@ button {
     font-size: 1.8rem;
     font-family: 'source';
 }
+section{
+    padding: 10%;
+}
 
 /*top*/
 #top {
@@ -135,4 +139,19 @@ button {
 #top button:hover {
     color: #FBFFFB;
     background-color: #266035;
+}
+/**/
+#about{
+    height: 60vh;
+    background-image: url('../images/about-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#about .txt{
+    width: 25%;
+    margin-right: 10%;
 }
