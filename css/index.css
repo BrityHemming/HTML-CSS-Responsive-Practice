@@ -188,3 +188,90 @@ nav{
 .tropicals{
     background-image:url('../images/tropicals.jpg');
 }
+
+/*Footer Section Styles*/
+#contact{
+    display:flex;
+    flex-wrap:wrap;
+    color:#fff;
+    background-color:#266035;
+}
+#contact a, #contact h3{
+    color:#fff;
+    text-align:left;
+}
+#contact h2{
+    width:100%;
+    color:#fff;
+}
+.left, .right{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left div, .right img{
+    width:60%;
+}
+.bottom{
+    width:100%;
+    text-align:right;
+    margin-right:10%;
+}
+
+/*Responsive Styles*/
+/*
+max-width scales down - desktop first
+min-width scales up - mobile first
+*/
+@media(max-width: 800px){
+    /*if the screen size is 800px or smaller apply these styles*/
+}
+
+@media(max-width: 500px){
+    /*if the screen size is 500px or smaller apply these styles*/
+    nav{
+        flex-direction:column;
+    }
+    .links{
+        width:80%;
+    }
+    #about{
+        background-image:none;
+        background-color:#e0e1e3;
+        justify-content: center;
+        height:auto;
+    }
+    #about .txt{
+        margin:0;
+        width:80%;
+    }
+    /*shop section styles*/
+    .container{
+        justify-content: center;
+    }
+    .bgimg{
+        height:60vh;
+    }
+    .shoptxt, .bgimg{
+        width:90%;
+    }
+    .one{
+        order:0;
+    }
+    .two{
+        order:1
+    }
+    .three{
+        order:2;
+    }
+    .four{
+        order:3;
+    }
+    .five{
+        order:4;
+    }
+    .six{
+        order:5;
+    }
+}
