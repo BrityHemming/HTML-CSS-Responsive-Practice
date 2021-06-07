@@ -71,6 +71,7 @@ a {
 h1, h2, h3 {
     font-family: 'Oxygen', sans-serif;
     color: #266035;
+    text-align: center;
 }
 
 h1 {
@@ -91,8 +92,12 @@ button {
     padding: 3% 4%;
     font-size: 1.8rem;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #FBFFFB;;
+    color: #FBFFFB;
 }
+
+sections {
+    padding: 20%;
+} /*  check on this padding */
 
 /* header section styles */
 
@@ -104,7 +109,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 999%; /* will make sure everything scrolls behind the nav */
-    background-color: rgba(255, 255, 255, 0.0);
+    background-color: rgba(255, 255, 255, 0.0); /* rgba is a way to define color Red Green Blue A is for opacity of color (fourth color has to be less than one if you want to see through it */
 }
 
 .logo {
@@ -151,5 +156,171 @@ nav {
     border: 2px solid #266035;
     color: #266035;
     margin-top: 5%;
-    
+}
+
+/* About Section Styles */
+
+#about {
+    height: 80vh;
+    background-image: url('../images/about-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#about .txt {
+    width: 25%;
+    margin-right: 10%;
+}
+
+/* shop section styles */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shoptxt, .bgimg {
+    width: 50%;
+}
+
+.shoptxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 4%;
+    text-align: center;
+}
+
+.shoptxt div {
+    width: 65%;
+}
+
+.shoptxt div button {
+    margin-top: 5%;
+}
+
+.bgimg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat   
+}
+
+.succulents {
+    background-image:url('../images/succulants.jpg');
+}
+
+.cacti {
+    background-image: url('../images/cacti.jpg')
+}
+
+.tropicals {
+    background-image: url('../images/tropicals.jpg')
+    /* -m "styled shop section" */
+}
+
+/* footer section styles */
+
+footer { 
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #266035;
+}
+
+footer a, footer h2 {
+    color: white;
+    text-align: left;
+}
+
+#contact h2 {
+    width: 100%;
+    color: white;
+}
+
+.left .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left div, .right img {
+    width: 60%;
+}
+
+.bottom {
+    width: 100%;
+    text-align: right;
+    margin-right: 10%;
+}
+
+/* -m website is styled */
+
+
+/* responsive styles with css go at the bottom of page */
+
+/* Responsive styles */
+/* for media queries 
+max-width scales down - desktop first 
+min-width scales up - mobile first */
+
+@media (max-width: 800px) /* pixels have to be used in media queries because screen size is fixed and measures in pixels so if screen size is 800px or smaller then apply these styles */ {
+
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+    .links {
+        width: 80%;
+    }
+
+    #about {
+        background-image: none;
+        background-color: #e0e1e3;
+        justify-content: center;
+        height: auto;
+    }
+
+    #about .txt {
+        margin:0;
+        width: 80%;
+    }
+    /* shop section styles */
+    .container {
+        justify-content: center;
+    }
+
+    .bgimg {
+        height: 60vh;
+    }
+
+    .shoptxt .bgimg {
+        width: 90%;
+    }
+
+    .one {
+        order:0
+    }
+    .two {
+        order:1
+    }
+    .three {
+        order:2
+    }
+    .four {
+        order:3
+    }
+    .five {
+        order:4
+    }
+    .six {
+        order:5
+    }
+
 }
