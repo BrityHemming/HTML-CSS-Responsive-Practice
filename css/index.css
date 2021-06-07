@@ -1,0 +1,285 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-family: 'Source Sans Pro', sans serif;
+    text-decoration: none;
+    color::after
+}
+h1,h2,h3{
+    font-family: 'Oxygen', sans-serif;
+    color:#266035,
+}h1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    background-color:
+}
+
+/*header section styles*/
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999:/*will make sure everything scrolls behind the nav*/
+    background-color: rgba(255,255,255,0,8);
+}
+.top{
+    width:10%;
+    display:flex
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:70%;
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+}
+#top button{
+    background-color:
+    border: 2px solid 
+    color:aliceblue
+    margin-top:5%;
+    transition:2s;
+}
+#top button:hover{
+    color:
+    background-color:aliceblu
+}
+/*About Section Styles*/
+#about{
+
+}
+
+#about .txt{
+    width:25%;
+    margin-right:10%;
+}
+
+/*shop section styles*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.shoptxt, bgimg{
+    width:50%;
+}
+.shoptxt{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:6% 4%;
+    text-align:center;
+}
+.shoptxt div{
+    width:65%;
+}
+.shoptxt div button{
+    margin-top 5%;
+}
+
+.bgimg{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.succulants{
+    background-image:url(..)
+
+
+
+
+    .tropicals{
+        background-image:url('..images/tropicals.jpg');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    margin_right: 10%;
+}
+
+/*responsive media styles*/
+/*
+max-width scales down-desktop first
+min-width scales up-mobile first
+*/
+@media(max-width: 800px){
+    /*if the screen size is 800px or smalles apply these styles*/
+
+@media(max-width:500px){
+    /*if the screen size is 500px or smaller apply these styles*/
+
+    nav{
+        flex-direction:column;
+}
+.links{
+    width:80%;
+}
+#about{
+    background-image:none;
+    background-color:aliceblue
+    justify-content: center;
+    height:auto;
+}
+#about .txt{
+    margin:0%;
+    width:80%;
+}
+/*shop section styles*/
+.container{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.two{
+    order:1
+}
+.three{
+    order:2;
+}
+.four{
+    order:3;
+}
+.five{
+    order:4;
+}
+.six{
+    order:5;
+}
+#contact{
+    flex-direction:column;
+}
+.bottom{
+    text-align:center;
+}
+.left, .right{
+    width:100%;
+}
