@@ -155,3 +155,67 @@ section{
     width: 25%;
     margin-right: 10%;
 }
+/*styling shop*/
+.container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.shoptxt, .bgimg {
+    width: 50%;
+}
+.shoptxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 4%;
+    text-align: center;
+}
+.shoptxt div {
+    width: 60%;
+    
+}
+.shoptxt div button {
+    margin-top: 5%;
+}
+.bgimg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.succulants{
+    background-image: url('../images/succulants.jpg');
+}
+.cacti{
+    background-image: url('../images/cacti.jpg');
+
+}
+.tropicals {
+    background-image: url('../images/tropicals.jpg');
+}
+
+/*footer*/
+#contact{
+    display: flex;
+    flex-wrap:wrap;
+}
+#contact a, #contact h3 {
+    color: #fff;
+    text-align: left;
+}
+#contact h2 {
+    width: 100%;
+    color: #fff;
+}
+.left .right {
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left div{
+    width:60%;
+}
+.bottom {
+    width: 100%;
+}
