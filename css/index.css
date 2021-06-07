@@ -307,9 +307,51 @@ nav {
 /*Responsive Styles*/
 
 /*Desktop*/
-@media (max-width: 800px);
- {
+@media (max-width: 800px) {
 }
-@media (max-width: 500px);
- {
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+  .links {
+    width: 80%;
+  }
+  #about {
+    background-image: none;
+    background-color: #e0e1e3;
+    justify-content: center;
+    height: auto;
+  }
+  #about .txt {
+    margin: 0;
+    width: 80%;
+  }
+  /*shop section styles*/
+  .container {
+    justify-content: center;
+  }
+  .bgimg {
+    height: 60vh;
+  }
+  .shoptxt,
+  .bgimg {
+    width: 90%;
+  }
+  .one{
+order: 0;
+  }
+  .two{
+order: 1;
+}
+  .three{
+order: 2;
+}
+  .four{
+order: 3;
+}
+  .five{
+order: 4;
+}
+  .six{
+order: 5;
 }
