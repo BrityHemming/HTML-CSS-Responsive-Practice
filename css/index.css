@@ -1,0 +1,90 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box; /* this box-sizing makes CSS respect the width of the box by applying padding within the width its been given, not in addition to it */
+    max-width: 100%; /* makes it so that the element can never be bigger than its parent. stops horizontal scroll bar */
+    padding: 0;
+    margin: 0;
+    border: 1px solid grey;
+}
+
+/* General Styles */
+/* rem for fonts */
+
+html {
+    font-size: 62.5%; /* this 62.5% is a scalable unit of measurement that sets base font size to 10px that 1rem=10px  because default browser size is 16px and gives user control over bumping font size up or down because % is a scalable unit of measurement*/
+}
+
+body {
+    font-size: 1.9rem; /* setting font size back to 16px */
+    line-height: 1.5; /* no unit of measurement because takes the font size and multiplies it by this number to add space between lines */
+    color: #4f4f4f;
+    background-color: #FBFFFB;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: #266035;
+}
+
+h1, h2, h3 {
+    font-family: 'Oxygen', sans-serif;
+    color: #266035;
+}
+
+h1 {
+    color: #FBFFFB;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+buttons {
+    background-color: #266035;
+}
