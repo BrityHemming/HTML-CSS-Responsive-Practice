@@ -1,0 +1,300 @@
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing:border-box; /*respect the width I've given you, if I add padding or border apply it within the width no in addition to it*/
+    padding:0;
+    margin:0;
+    max-width:100%;/*You can NEVER be bigger than your parent - this stops the horizontal scroll*/
+    /* border:1px solid grey; */
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    line-height:1.5;
+    font-size:1.8rem;
+    background-color:#FBFFFB;
+    color:#4f4f4f;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Oxygen', sans-serif;
+    text-align:center;
+    color:#266035;
+}
+h1{
+ color:#FBFFFB;
+ font-size:5rem;
+}
+h2{
+    font-size:3rem;
+}
+h3{
+    font-size:2.5rem;
+}
+a{
+    text-decoration:none;
+    color:#266035;
+}
+section{
+    padding:4% 0;
+}
+
+/*Header Section Styles*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+.logo{
+    width:10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:50%;
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/*Home Section Styles*/
+#home{
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../images/header.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom;
+}
+
+/*About Section Styles*/
+
+#about{
+    background-image: url('../images/about-img.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    height:80vh;
+}
+#about div{
+    width:20%;
+    margin-right:10%;
+}
+
+
+/*Shop Section Styles*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.bgimg, .shopTxt{
+    width:50%;
+}
+.shopTxt{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:7% 0;
+    text-align:center;
+}
+.shopTxt div{
+    width:60%;
+}
+.bgimg{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center bottom;
+}
+.succulents{
+    background-image:url('../images/succulants.jpg');
+}
+.cacti{
+    background-image:url('../images/cacti.jpg');
+}
+.tropicals{
+    background-image:url('../images/tropicals.jpg');
+}
+
+/*Footer Styles*/
+ footer{
+     background-color:#266035;
+     color:#fff;
+     display:flex;
+     flex-wrap:wrap;
+ }
+ footer h2{
+     width:100%;
+ }
+ footer h2, footer h3{
+     color: #fff;
+ }
+ footer a{
+     color:#fff;
+ }
+ .left, .right{
+     width:50%;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .copyright{
+     width:100%;
+     text-align:right;
+ }
+ .copyright p{
+     margin-right: 2%;
+ }
+ .right img{
+     width:50%;
+ }
+ .left div{
+     width:50%;
+ }
+
+ /*
+ Media Queries
+ 
+ mobile first - scaling up = min-width
+ desktop first - scaling down = max-width
+ */
+/*Tablets*/
+ @media(max-width: 800px){ /*apply these styles to anything that is 800px or smaller*/
+     /*all of the styles for 800px go here*/
+     #about{
+         background-position: left center;
+     }
+     #about div{
+         width:50%;
+         margin-right:3%;
+         margin-top:5%;
+     }
+ }
+
+ /*phones*/
+@media(max-width:500px){
+    nav{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .links{
+        width:100%;
+    }
+    .logo{
+        width:30%;
+    }
+    /*about section styles*/
+    #about{
+        background-image:none;
+        background-color:#dddee0;
+        justify-content: center;
+        height:auto;
+    }
+    #about div{
+        margin:0;
+        width:90%;
+    }
+    .container{
+        justify-content: center;
+    }
+    .bgimg, .shopTxt{
+        width:90%;
+    }
+    .bgimg{
+        height:50vh;
+    }
+    .one{
+        order:1;
+    }
+    .two{
+        order:2;
+    }
+    .three{
+        order:3;
+    }
+    .four{
+        order:4;
+    }
+    .five{
+        order:5;
+    }
+    .six{
+        order:6;
+    }
+    .left, .right{
+        width:100%;
+    }
+    footer h2{
+        order: 1;
+    }
+    .left{
+        order: 3;
+    }
+    .right{
+        order:2;
+    }
+    .copyright{
+        order:4;
+        text-align:center;
+    }
+    .copyright p{
+        margin:0;
+    }
+    
+}
