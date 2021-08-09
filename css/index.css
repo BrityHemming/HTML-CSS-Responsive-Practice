@@ -55,10 +55,14 @@ html{
     font-size:62.5%;
 }
 body{
-    font-size:1.6rem;
+    font-size:1.8rem;
     line-height:1.5;
     background-color: #FBFFFB;
     color:#4f4f4f; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Oxygen', sans-serif;
 }
 h1{
     font-size:5rem;
@@ -67,10 +71,17 @@ h1{
 h2{
     font-size:3rem;
     text-align:center;
+    color: #266035;
 }
 h3{
     font-size:2.5rem;
     text-align:center;
+    color: #266035;
+}
+a{
+    text-decoration:none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#266035;
 }
 section{
     padding:4% 0;
@@ -148,4 +159,44 @@ nav{
 }
 .tropicals{
     background-image: url('../images/tropicals.jpg');
+}
+
+/*Footer Section Styles*/
+
+footer{
+    background-color:#266035;
+    color:#fff;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer h2{
+    color:#fff;
+    width:100%;
+}
+footer h3{
+    color:#fff;
+    text-align:left;
+}
+footer a{
+    color: #fff;
+}
+.right, .left{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.right img{
+    width:50%;
+}
+.left div{
+    width:50%;
+    line-height:2.5;
+}
+.bottom{
+    width:100%;
+}
+.bottom p{
+    text-align:right;
+    margin-right:5%;
 }
