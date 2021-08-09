@@ -65,18 +65,20 @@ h1, h2, h3{
     font-family: 'Oxygen', sans-serif;
 }
 h1{
-    font-size:5rem;
+    font-size:7rem;
     color: #FBFFFB;
 }
 h2{
-    font-size:3rem;
+    font-size:4rem;
     text-align:center;
     color: #266035;
+    margin-bottom:4%;
 }
 h3{
     font-size:2.5rem;
     text-align:center;
     color: #266035;
+    margin-bottom:4%;
 }
 a{
     text-decoration:none;
@@ -85,6 +87,13 @@ a{
 }
 section{
     padding:4% 0;
+}
+button{
+    padding: 2% 4%;
+    margin-top: 4%;
+    font-size:1.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition:2s;
 }
 /*Helper Classes*/
 .bgimg{
@@ -134,8 +143,26 @@ nav{
    width:20%;
    margin-right:10%; 
 }
-
+#top button{
+    color:#266035;
+}
+#top button:hover{
+    color:#fff;
+    background-color:#266035;
+}
 /*shop section styles*/
+#shop{
+    padding-bottom:0;
+}
+#shop button{
+    color:#fff;
+    background-color:#266035;
+}
+#shop button:hover{
+    color:#266035;
+    background-color:#fff;
+    border:2px solid #266035;
+}
 .container{
     display:flex;
     flex-wrap:wrap;
@@ -144,7 +171,7 @@ nav{
     width:50%;
 }
 .text{
-    padding:5%;
+    padding:8%;
     text-align:center;
 }
 .text div{
@@ -153,12 +180,15 @@ nav{
 }
 .succulants{
     background-image: url('../images/succulants.jpg');
+    background-position:bottom;
 }
 .cacti{
     background-image: url('../images/cacti.jpg');
+    background-position:center;
 }
 .tropicals{
     background-image: url('../images/tropicals.jpg');
+    background-position:center;
 }
 
 /*Footer Section Styles*/
@@ -168,6 +198,7 @@ footer{
     color:#fff;
     display:flex;
     flex-wrap:wrap;
+    padding:4% 0;
 }
 footer h2{
     color:#fff;
@@ -199,4 +230,97 @@ footer a{
 .bottom p{
     text-align:right;
     margin-right:5%;
+    margin-top:5%;
+}
+
+/*Media Queries go here*/
+/*
+desktop first design - means we scale down - we use max-width
+mobile first design - means we scale up - we use min-width
+*/
+/*tablet view - 800px*/
+/*when the screen size reaches 800px or smaller these rules apply*/
+@media (max-width: 800px){
+    #top{
+        margin-top: -8%;
+    }
+    #about div{
+        width:40%;
+        margin-right:3%; 
+     }
+     .text{
+        padding:4%;
+        text-align:center;
+    }
+    .right img{
+        width:70%;
+    }
+}
+
+/*when the screen size reaches 500px or smaller these rules apply*/
+/*mobile view 500px*/
+@media (max-width: 500px){
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .logo{
+        width:10%;
+    }
+    .links{
+        width:100%;
+    }
+    h1{
+        font-size:5rem;
+    }
+    #about{
+        background-image:none;
+        background-color:lightgrey;
+        justify-content: center;
+        align-items:center;
+        padding:4% 0;
+        text-align:center;
+    }
+    #about div{
+        width:80%;
+        margin-right:0;
+    }   
+    .container{
+        justify-content:center;
+    }  
+    .text, .succulants, .cacti, .tropicals{
+        width:100%;
+    }
+    .succulants, .cacti, .tropicals{
+        height:50vh;
+    }
+    .one{
+        order:1;
+    }
+    .two{
+        order:2;
+    }
+    .three{
+        order:3;
+    }
+    .four{
+        order:4;
+    }
+    .five{
+        order:5;
+    }
+    .six{
+        order:6;
+    }
+    .right, .left{
+        width:100%;
+    }
+    .bottom p{
+        text-align:center;
+        margin-right:0;
+    }
+    .left div{
+        width:60%;
+        line-height:2;
+    }
 }
