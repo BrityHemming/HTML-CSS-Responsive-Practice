@@ -1,0 +1,76 @@
+/*CSS RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/*UNIVERSAL SELECTORS*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid gray;
+}
+
+
+/*GENERAL STYLES*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: #FBFFFB;
+    color: #4f4f4f;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    color: #266035;
+}
+button{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+}
+h1, h2, h3{
+    font-family: 'Oxygen', sans-serif;
+    color: #266035;
+    letter-spacing: 3px;
+}
+h1{
+    font-size: 5rem;
+    color: #FBFFFB;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+section, footer{
+    padding: 4% 0;
+}
