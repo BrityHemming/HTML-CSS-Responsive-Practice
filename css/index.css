@@ -1,0 +1,245 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid grey;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #fbfffb;
+  line-height: 1.5;
+  color: #4f4f4f;
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #266035;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oxygen", sans-serif;
+  color: #266035;
+}
+h1 {
+  color: #fbfffb;
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+section {
+  padding: 4% 0;
+}
+button {
+  padding: 3% 5%;
+  margin-top: 5%;
+  color: white;
+  background-color: #266035;
+  border: 2px solid #266035;
+  transition: 2s;
+}
+button:hover {
+  color: #266035;
+  background-color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.logo {
+  width: 6%;
+}
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#top {
+  height: 95vh;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#top button {
+  color: #266035;
+  background-color: white;
+}
+#top button:hover {
+  color: white;
+  background-color: #266035;
+}
+
+#about {
+  height: 75vh;
+  background-image: url("../images/about-img.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#about div {
+  width: 20%;
+  margin-right: 10%;
+}
+
+#shop {
+  padding-bottom: 0%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bg-img,
+.text {
+  width: 50%;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+}
+
+.text div {
+  width: 60%;
+}
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.succulants {
+  background-image: url("../images/succulants.jpg");
+}
+
+.cacti {
+  background-image: url("../images/cacti.jpg");
+}
+.tropicals {
+  background-image: url("../images/tropicals.jpg");
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #266035;
+}
+
+footer h2,
+.bottom {
+  width: 100%;
+  color: white;
+}
+.left,
+.right {
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3,
+footer a {
+  color: white;
+}
