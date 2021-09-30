@@ -64,6 +64,7 @@ section{
 button{
     padding:3% 5%;
     margin-top:5%;
+    margin-bottom: 3%;
     color:#fff;
     background-color:#266035;
     border:2px solid #266035;
@@ -73,6 +74,38 @@ button{
 button:hover{
     color:#266035;
     background-color:#fff;
+}
+
+    /*Top Section  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.8 );
+}
+.logo{
+    width: 6%;
+}
+.links{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#top{
+    height:95vh;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3% 0;
 }
 #top button{
     color:#266035;
