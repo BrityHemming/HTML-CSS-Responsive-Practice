@@ -1,3 +1,4 @@
+/*CSS Reset*/
 html,
 body,
 div,
@@ -5,31 +6,6 @@ span,
 applet,
 object,
 iframe,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
 h1,
 h2,
 h3,
@@ -46,6 +22,26 @@ address,
 big,
 cite,
 code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
 dl,
 dt,
 dd,
@@ -55,29 +51,63 @@ li,
 fieldset,
 form,
 label,
-legend {
-  vertical-align: baseline;
-  font-family: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  outline: 0;
-  padding: 0;
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  border: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-/* remember to define focus styles! */
-:focus {
-  outline: 0;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border: 1px solid grey;
+  /* border:1px solid grey; */
 }
-
+/*General Styles*/
 html {
   font-size: 62.5%;
 }
@@ -98,6 +128,8 @@ h2,
 h3 {
   font-family: "Oxygen", sans-serif;
   color: #266035;
+  text-align: center;
+  margin-bottom: 5%;
 }
 h1 {
   color: #fbfffb;
@@ -115,18 +147,21 @@ section {
 button {
   padding: 3% 5%;
   margin-top: 5%;
-  color: white;
+  color: #fff;
   background-color: #266035;
   border: 2px solid #266035;
+  font-size: 1.6rem;
   transition: 2s;
 }
 button:hover {
   color: #266035;
-  background-color: white;
+  background-color: #fff;
 }
+/*header section styles*/
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
@@ -142,6 +177,7 @@ nav {
   justify-content: space-evenly;
 }
 
+/*Top Section Styles*/
 #top {
   height: 95vh;
   background-image: url("../images/header.jpg");
@@ -155,31 +191,31 @@ nav {
 }
 #top button {
   color: #266035;
-  background-color: white;
+  background-color: #fff;
 }
 #top button:hover {
-  color: white;
+  color: #fff;
   background-color: #266035;
 }
-
+/*About Section Styles*/
 #about {
   height: 75vh;
   background-image: url("../images/about-img.jpg");
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 #about div {
   width: 20%;
   margin-right: 10%;
 }
 
+/*Shop Section styles*/
 #shop {
-  padding-bottom: 0%;
+  padding-bottom: 0;
 }
 .container {
   display: flex;
@@ -197,49 +233,55 @@ nav {
   text-align: center;
   padding: 5%;
 }
-
 .text div {
   width: 60%;
 }
-
 .bg-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
 }
-
 .succulants {
   background-image: url("../images/succulants.jpg");
 }
-
 .cacti {
   background-image: url("../images/cacti.jpg");
 }
 .tropicals {
   background-image: url("../images/tropicals.jpg");
 }
-
 footer {
   display: flex;
   flex-wrap: wrap;
   background-color: #266035;
+  padding: 4% 0;
 }
-
 footer h2,
 .bottom {
   width: 100%;
-  color: white;
+  color: #fff;
+}
+.bottom {
+  text-align: right;
+  margin-right: 5%;
+  margin-top: 2%;
 }
 .left,
 .right {
   width: 50%;
-  color: white;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.right img {
+  width: 50%;
+}
+.left div {
+  width: 50%;
+  line-height: 3;
+}
 footer h3,
 footer a {
-  color: white;
+  color: #fff;
 }
