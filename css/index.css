@@ -176,6 +176,7 @@ footer{
     display:flex;
     flex-wrap:wrap;
     background-color:#266035;
+    padding:4% 0;
 }
 footer h2, .bottom{
     width:100%;
@@ -184,6 +185,7 @@ footer h2, .bottom{
 .bottom{
     text-align:right;
     margin-right:5%;
+    margin-top:2%;
 }
 .left, .right{
     width:50%;
