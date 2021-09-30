@@ -13,7 +13,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -23,25 +23,62 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 *{
-   box-sizing: border-box;
-   padding:0;
-   margin:0;
-   max-width: 100%;
-   border: 1px solid grey; 
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border:1px solid grey;
 }
 html{
-    font-size: ;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #FBFFFB;
+    line-height: 1.5;
+    color:#4f4f4f;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    font-family: "Source Sans Pro", sans-serif;
+    color:#266035;
+}
+h1, h2, h3 {
+    font-family: 'Oxygen', sans-serif;
+    color:#266035
+}
+h1{
+    color: #FBFFFB;
+    font-size: 5rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 3.5rem;
+}
+section{
+    pad: 4% 0;
+}
+button{
+    padding:3% 5%;
+    margin-top:5%;
+    color:#fff;
+    background-color:#266035;
+    border:2px solid #266035;
+    font-size:1.6rem;
+    transition:2s;
+}
+button:hover{
+    color:#266035;
+    background-color:#fff;
+}
+#top button{
+    color:#266035;
+    background-color:#fff;
+}
+#top button:hover{
+    color:#fff;
+    background-color: #266035;
 }
