@@ -107,7 +107,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav class="justaddingtocodesopushgoesthroughcorrectly">
         <div class="logo">
             <img src="images/logo.png" alt="illustration of a watering can">
         </div>
