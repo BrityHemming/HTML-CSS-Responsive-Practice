@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -23,189 +27,294 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    border: 1px solid grey;
+    box-sizing:border-box;
+    max-width:100%; /*you can never be bigger than your parent - this is going to stop that dreaded horizontal scroll bar*/
+    border:1px solid grey;
 }
+/*general styles*/
 html{
-    font-size:62.5%;
+    font-size:62.5%; /* 1 rem = 10px */
 }
 body{
+    line-height:1.5;
     font-size:1.8rem;
-line-height:1.55;
-color:#4f4f4f;
-background-color:#FBFFFB;
+    color:#4F4f4f;
+}
+h1, h2, h3{
+    letter-spacing: 3px;
+    text-align:center;
 }
 h1{
-    color:#FBFFFB;
-    font-size:6rem;
+    font-size:5rem;
 }
 h2{
-    font-size:3rem;
+    font-size:4rem;
 }
 h3{
-    font-size:2.2rem;
+    font-size:2.5rem;
 }
-h2, h3{
-    color:#266035;
-    text-align:center;
-    font-family: 'Oxygen', sans-serif;
-    margin-bottom:5%;
 a{
-    text-decoration: none;
-    color: #266035;
-    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration:none;
+    color:#4F4f4f;
 }
-/*header*/
-button{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.8rem;
-    padding: 2% 4%;
-    margin-top:4%;
-}
-section, footer{
+section{
     padding: 4% 0;
 }
 
-.bg-img{
-    background-repeat: no repeat
-    background-size: cover;
-    background-position: center;
+/*Header Section Styles*/
+header{
+    height:80vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    background-image: url('../images/header.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align:center;
 }
-
 nav{
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top:0;
-    z-index: 999; /*everything should scroll behind this*/
-    background-color: rgba(255, 255, 255, 0.8);
+    width:100%;
+    position:fixed;
+    background-color:rgba(255,255,255,0.8);
 }
 .logo{
-    width:5%;
+    width:10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:60%;
 }
 .links{
-    width:50%;
+    width:60%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#top{
-    height: 90vh;
-    background-image: url('../images/header.jpg');
-    background-position:bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-#top button{
-    border:5px solid #266035;
-    color:#266035;
-    background-color:#FFF;
-transition:2s;
-}
-#top button:hover{
-    color:#fff;
-    background-color:#266035;
-    border:2px solid #fff;
-}
-
-/*about section*/
+/*About Section Styles*/
 #about{
-    height:85vh;
-    background-image:url('../images/about-img.jbg');
     display:flex;
-    justify-content:flex-end;
-    align-item:center
+    justify-content: flex-end;
+    padding:20% 0;
+    background-image: url('../images/about-img.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+
 }
 #about div{
     width:20%;
     margin-right:10%;
 }
 
-#shop{
-    padding-bottom:0;
-}
+/*Shop Section Styles*/
 .container{
     display:flex;
-    flex-wrap:wrap;
-
+    text-align:center;
 }
-
-.cacti, .tropical, .succulants, .text{
+.container p{
+    text-align:justify;
+}
+.container div{
     width:50%;
 }
-.text{
-    padding: 5%;
+.container .text{
     display:flex;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
+    padding:10% 0;
 }
-.text div{
-    width:60%;
+.bg{
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
-
-.text button{
-    background-color:#266035;
-    color:#fff;
-    border: 1px solid #266035;
-    transition:2s;
-}
-.text button:hover{
-    background-color:#fff;
-    color:#266035;
-}
-.succulants{
-    background-image:url('../images/succulants.jpg');
+.succulents{
+    background-image: url('../images/succulants.jpg');
 }
 .cacti{
     background-image:url('../images/cacti.jpg');
 }
-.tropicals{
-    background-images:url('../images/tropicals.jpg');
+.tropical{
+    background-image:url('../images/tropicals.jpg');
 }
 
-/*footer*/
+/**footer section styles **/
 footer{
-    background: color #266035;
-    display: flex;
-    flex-wrap:wrap;
-    color:#fff;
+    padding:4% 0;
 }
-footer h2{
-    color:#fff;
-    width:100%;
-
+.footer-parent{
+    display:flex;
 }
-footer a, footer h3{
-    color:#fff;
+.left, .right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.img-wrapper{
+    width:50%;
+}
+footer h3{
     text-align:left;
 }
-.right, .left{
-width: 50%;
-display:flex;
-justify-content: center;
-align-items: center;
+.text-container{
+    line-height:2;
+}
+.copyright{
+    text-align:right;
+    margin-right:10%;
+}
+
+/*Media Queries*/
+@media(max-width:800px){
+    #about{
+        background-position: left top;
+    }
+    #about div{
+        margin-top:5%;
+        width:35%;
+    }
+    .container .text div{
+        width:70%;
+    }
+    .img-wrapper{
+        width:70%;
+    }
+    .container p{
+        text-align:left;
+    }
+    .bottom p{
+        margin-right: 9.5%;
+    }
+    .left div.info{
+        line-height:2;
+    }
+}/*this closes the 800px media query*/
+
+/*phone*/
+@media(max-width:500px){
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+    .logo{
+        width:20%;
+    }
+    .links{
+        width:100%;
+    }
+    #about{
+        justify-content:flex-start;
+    }
+    #about div{
+        margin-left:10%;
+        width:40%;
+    }
+    .container{
+        flex-direction:column;
+        align-items:center;
+    }
+    .mobile{
+        flex-direction:column-reverse;
+    }
+    .container div{
+        width:80%;
+    }
+    .bg{
+        height:60vh;
+    }
+    .footer-parent{
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .left, .right{
+        width:80%;
+        margin:2% 0;
+    }
+    .copyright{
+        text-align:center;
+        margin-right:0;
+        margin-top:1%;
+    }
+    
+}
+
+/*responsive styles*/
+
+/*tablet view: 800px
+mobile: 500px*/
+
+@media(max-width: 800px){
+.logo{
+    width:8%;
+}
+#about div{
+    width:50%;
+    margin-right: 3%;
+    margin-top: 20%;
+}
+.text div{
+    width: 80%;
+}
+.bottom p{
+    margin-right: 9.5%;
 }
 .left div.info{
-    width: 60%;
-    line-height:2.5;
+    line-height:2;
 }
-.right img{
-    width:60%;
 }
-.bottom{
+
+@media(max-width:500px){
+nav{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+.links{
     width:100%;
-text-align:right;
 }
-.bottom a{
-    margin-right:5%;
-    margin-top:2%;
+#about{
+    background-image:none;
+    background-color:lightgray;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+#about div{
+    margin:0;
+    width: 80%;
+}
+.container{
+    justify-content: center;
+    width: 80%;
+}
+.cacti, .tropicals, .succulants{
+    height:40vh;
+}
 }

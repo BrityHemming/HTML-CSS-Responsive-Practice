@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--allows mobile browsers to read your media queries - your site is NOT responsive without this tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Add Google Fonts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--Link your stylesheet here-->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="illustration of a watering can">
+            </div>
+            <div class="links">
+                <a href="#top">Home</a>
+                <a href="#about">About</a>
+                <a href="#shop">Plants</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <section id="top" class="bg-img">
+        <div class="titles">
+            <h1>The Watering Can</h1>
+            <button>Shop Our Indoor Plant Sale</button>
+        </div>
+    </section>
+    <section id="about" class="bg-img">
+        <div>
+            <h2>Our Story</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam eius minima suscipit nihil aperiam amet, maxime possimus magnam voluptatibus vel, et modi corrupti, dicta quae sequi impedit quasi omnis vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque nesciunt tempora impedit cumque porro placeat esse modi totam distinctio commodi veritatis at, doloribus numquam. Tempora ullam vero tenetur reiciendis.</p>
+        </div>
+    </section>
+    <section id="shop">
+        <h2>Our Plants</h2>
+        <div class="container">
+            <div class="bg-img succulants one"></div> <!--empty div for background image-->
+            <div class="text two">
+                <div>
+                    <h3>Succulants</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur soluta iure iusto minima deserunt, eos voluptatem ad temporibus quae quasi accusantium similique pariatur neque autem nostrum quas dicta velit ullam!</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div><!--this closes the text div-->
+            <div class="text four">
+                <div>
+                    <h3>Cacti</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ducimus suscipit, harum doloribus molestias quis magnam eum laborum incidunt pariatur aperiam dolorum facilis aliquam! Impedit eos delectus architecto beatae ullam.</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div><!--this closes the text div-->
+            <div class="bg-img cacti three"></div><!--empty div for the background image-->
+            <div class="bg-img tropicals five"></div><!--empty div for background image-->
+            <div class="text six">
+                <div>
+                    <h3>Tropicals</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, hic obcaecati facilis, itaque assumenda aperiam consequuntur repudiandae, aliquam illo provident nobis maiores quis dolore. Possimus exercitationem nemo explicabo ut repudiandae.</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div>
+        </div><!--this closes the container-->
+    </section>
+    <footer id="contact">
+        <h2>Get In Touch!</h2>
+        <div class="left">
+            <div class="info">
+                <h3>Find Us Here:</h3>
+                <address>123 Plant Lane<br>
+                Bloomfield Ontario<br>
+                Canada L2G 0X7</address>
+                <a href="tel:+1-613-978-8282">613-978-8282</a><br>
+                <a href="mailto:info@thewateringcan.ca">info@thewateringcan.ca</a>
+                <p>@thewateringcan on the socials</p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/shop.jpg" alt="inside of the front room of the watering can shop">
+        </div>
+        <div class="bottom">
+            <p>&copy copyright Brit Hemming 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Add Google Fonts here-->
+
+    <!--Link your stylesheet here-->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="illustration of a watering can">
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Plants</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="cta">
+            <h1>The Watering Can</h1>
+            <button>Shop Our Indoor Plant Sale!</button>
+        </div>
+    </header>
+    <section id="about">
+        <div>
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam placeat facilis dolorum harum quam eum accusantium amet aut delectus. Perferendis ipsam autem maxime modi quia quidem animi necessitatibus porro. Assumenda.</p>
+        </div>
+    </section>
+    <section id="shop">
+        <h2>Our Plants</h2>
+        <div class="container">
+            <div class="bg succulents">
+                <!--background image-->
+            </div>
+            <div class="text one">
+                <div>
+                    <h3>Succulents</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates excepturi consectetur est cumque quaerat quas suscipit itaque, impedit similique. Itaque enim id voluptates vitae culpa aliquid vel perferendis quas earum!</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div>
+        </div>
+        <div class="container mobile">
+            <div class="text two">
+                <div>
+                    <h3>Cacti</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis totam deserunt perferendis eius sint beatae expedita, qui dolore ut similique labore eum eveniet commodi. Autem excepturi ipsam soluta accusantium incidunt?</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div>
+            <div class="bg cacti">
+                <!--background image goes here-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="bg tropical">
+                <!--empty div with background image-->
+            </div>
+            <div class="text three">
+                <div>
+                    <h3>Tropicals</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum impedit autem porro illo, corporis eligendi, atque unde cupiditate facere ea consectetur rerum quaerat quod inventore. Temporibus nam non deserunt.</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Get In Touch!</h2>
+        <div class="footer-parent">
+            <div class="left">
+                <div class="text-container">
+                    <h3>Find Us Here:</h3>
+                    <address>123 Plant Lane<br>
+                    Bloomfield Ontario<br>
+                Canada, L2G 0X7</address>
+                <a href="tel:1-613-978-8282">+1 613-978-8282</a><br>
+                <a href="mailto:info@thewateringcan.ca">info@thewateringcan.ca</a>
+                <p>@thewateringcan on the socials</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img-wrapper">
+                    <img src="images/shop.jpg" alt="plants on display inside of the shop">
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright 2020</p>
+    </footer>
+</body>
+</html>-->
