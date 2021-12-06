@@ -3,7 +3,7 @@
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 html{
     font-size:62.5%;
@@ -235,5 +235,61 @@ min-width is mobile first - when you are scaling up to desktop
   }
   #top{
       margin-top:18%;
+  }
+  .container{
+      justify-content: center;
+  }
+  .one{
+      order:1;
+      width:90%;
+  }
+  .two{
+      order:2;
+      width:90%;
+  }
+  .three{
+      order:3;
+      width:90%;
+  }
+  .four{
+      order:4;
+      width:90%;
+  }
+  .five{
+      order:5;
+      width:90%;
+  }
+  .six{
+      order:6;
+      width:90%;
+  }
+  .text div{
+      width:90%;
+  }
+  /*footer section styles*/
+  .left, .right{
+      width:100%;
+  }
+  footer h2{
+      order:-2;
+  }
+  .right{
+      order:-1;
+  }
+  .right img{
+      width:60%;
+  }
+  .left div{
+      width:100%;
+      text-align:center;
+  }
+  footer h3{
+      text-align:center;
+  }
+  .bottom{
+      text-align:center;
+  }
+  .bottom p{
+    margin-right:0;
   }
 }
