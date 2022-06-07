@@ -180,3 +180,114 @@ footer h3, footer a{
     text-align:right;
     margin-right:3%;
 }
+
+/*
+max-width - scale down - desktop first design / this width or anything smaller rules apply
+min-width - scale up - mobile first design / this width or anything bigger rules apply
+*/
+
+/*Media Queries - RESPONSIVE DESIGN*/
+
+/*Tablet breakpoint*/
+@media (max-width: 800px){ /*these styles apply to 800px or smaller*/
+    /*header section styles*/
+   nav{
+       justify-content: center;
+       flex-wrap:wrap;
+   }
+   .logo{
+       width:7%;
+   }
+   .links{
+       width:100%;
+   }
+   /*top section styles*/
+   #top{
+       margin-top:11%;
+   }
+   /*about section styles*/
+   #about{
+       background-image:none;
+       background-color:lightgray;
+       justify-content: center;
+       height:auto;
+   }
+   #about div{
+       margin:0;
+       width:60%;
+   }
+   /*shop styles*/
+   .text{
+    padding:8% 2%;
+    }
+    .text div{
+        width:80%;
+    }
+    /*footer styles*/
+    .right img{
+        width:60%;
+    }
+}
+
+
+/*mobile breakpoint*/
+
+@media (max-width: 590px){
+    #about div{
+        width:80%;
+    }
+    /*shop section styles*/
+    .container{
+        justify-content: center;
+    }
+    .container div{
+        width:80%;
+    }
+    .container div.img{
+        height:40vh;
+    }
+    .one{
+        order:1;
+    }
+    .two{
+        order:2;
+    }
+    .three{
+        order:3;
+    }
+    .four{
+        order:4;
+    }
+    .five{
+        order:5;
+    }
+    .six{
+        order:6
+    }
+    /*footer styles*/
+    #contact{
+        text-align:center;
+    }
+    footer h2{
+        order: 1;
+    }
+    footer h3{
+        text-align:center;
+    }
+    .right{
+        order:2;
+        width:100%;
+    }
+    .right img{
+        width:40%;
+    }
+    .left{
+        order:3;
+        width:100%;
+    }
+    .copyright{
+        order:4;
+        margin:0;
+        text-align:center;
+    }
+}
