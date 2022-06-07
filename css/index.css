@@ -3,7 +3,7 @@
     margin:0;
     box-sizing:border-box; /*fixes the problem that we have with the box model - it says if I add padding or border apply it within the box not in addition to it*/
     max-width:100%; /*you can never be bigger than your parent - helps with scaling down images*/
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 
 /*General Rules*/
@@ -14,18 +14,26 @@ body{
     background-color:#FBFFFB;
     font-size:1.8rem;
     font-family: 'Source Sans Pro', sans-serif;
+    line-height:1.5;
 }
 
 h1{
     color:#FBFFFB;
     font-size:6rem;
     font-family: 'Oxygen', sans-serif;
-    margin-bottom:4%;
+    margin-bottom:2%;
 }
 h2, h3{
     color:#266035;
     font-family: 'Oxygen', sans-serif;
     margin-bottom:4%;
+    text-align: center;
+}
+h2{
+    font-size:4rem;
+}
+h3{
+    font-size:2.5rem;
 }
 a{
     color: #266035;
@@ -39,6 +47,7 @@ button{
     padding:3% 5%;
     font-size:1.8rem;
     transition:2s;
+    margin-top:4%;
 }
 button:hover{
     background-color:#266035;
@@ -82,4 +91,92 @@ nav{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+/*About Section Styles*/
+#about{
+    background-image: url('../images/about-img.jpg');
+    height:75vh;
+    background-position: center left;
+    display:flex;
+    /*since flexbox is row by default we don't need to add row. When it's row or row-reverse the main axis is horizontal and the cross axis is vertical*/
+    justify-content: flex-end; /*controls main axis*/
+    align-items: center; /*controls cross axis*/
+}
+#about div{
+    width:20%;
+    margin-right:10%;
+}
+
+/*Shop Section Styles*/
+#shop{
+    padding-bottom:0;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.container div{
+    width:50%;
+}
+.text{
+    padding:10% 4%;
+    text-align:center;
+}
+.text div{
+    margin:0 auto;
+}
+.text button{
+    background-color:#266035;
+    color:#FBFFFB;
+}
+.text button:hover{
+    background-color: #FBFFFB;
+    color:#266035;
+}
+/*adding background images*/
+.succulant{
+    background-image:url('../images/succulants.jpg');
+    background-position: bottom;
+} 
+.cacti{
+    background-image:url('../images/cacti.jpg');
+    background-position: bottom;
+}
+.tropical{
+    background-image:url('../images/tropicals.jpg');
+}
+/* Contact Section*/
+
+#contact{
+    display:flex;
+    flex-wrap:wrap;
+    color:#FBFFFB;
+    background-color:#266035;
+}
+footer h2{
+    width:100%;
+    color:#FBFFFB;
+}
+footer h3, footer a{
+    color:#FBFFFB;
+    text-align:left;
+}
+.left, .right{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width:30%;
+}
+.info{
+    width:60%;
+    line-height:2;
+}
+.copyright{
+    width:100%;
+    text-align:right;
+    margin-right:3%;
 }
