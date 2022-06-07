@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box; /*fixes the problem that we have with the box model - it says if I add padding or border apply it within the box not in addition to it*/
+    max-width:100%; /*you can never be bigger than your parent - helps with scaling down images*/
+    border:1px solid grey;
+}
+
+/*General Rules*/
+html{
+    font-size:62.5%; /*accessibility % is scalable and this makes it so 1rem === 10px*/
+}
+body{
+    background-color:#FBFFFB;
+    font-size:1.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+    color:#FBFFFB;
+    font-size:6rem;
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom:4%;
+}
+h2, h3{
+    color:#266035;
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom:4%;
+}
+a{
+    color: #266035;
+    text-decoration:none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+button{
+    border:4px solid #266035;
+    color: #266035;
+    background-color:#FBFFFB;
+    padding:3% 5%;
+    font-size:1.8rem;
+    transition:2s;
+}
+button:hover{
+    background-color:#266035;
+    color:#FBFFFB;
+}
+section, footer{
+    padding: 4% 0;
+}
+/*helper classes*/
+.img{
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+/*Header Section Styles*/
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    top:0;
+    background-color:rgba(250, 250, 250, 0.8);
+}
+.logo{
+    width:5%;
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/*Top Section Styles*/
+#top{
+    height:90vh;
+    background-image:url('../images/header.jpg');
+    background-position: bottom;
+    margin-top:5%;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
